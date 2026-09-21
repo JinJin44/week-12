@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+   <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">. 
+         <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <!-- へっだー-->
+     <header class="sticky top-0 z-50 bg-purple-500 text-white py-8 text-center flex items-center justify-between px-4 py-3">
+        <div>
+            <a href="http://広告のリンク先.com" target="_blank" rel="noopener noreferrer">
+            <img src="banner.jpg" alt="広告バナー">
+            </a>
+        </div>
+        
+        <div>
+            <h1 class="text-2xl font-bold">自分のポートフォリオ</h1>
+            <p class="mt-2 text-purple-200">POSSEでプログラミングを学んでいます</p>
+        </div>
+            <div class="flex gap-6">
+  <!-- ゲストアイコン -->
+  <div class="flex flex-col items-center text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0" />
+    </svg>
+    <span class="text-xs mt-1">ゲスト様</span>
+  </div>
+
+  <!-- メニューアイコン -->
+  <div class="flex flex-col items-center text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    <span class="text-xs mt-1">Menu</span>
+  </div>
+</div>
+     </header>
+     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
+<main class="max-3xl max-aout bg-white px-4 py-16 space-y-16 text-center">
+    <!-- 自己紹介 -->
+     <section class="mb-8">
+        <h2 class="text-2xl text-gray-800 font-bold mb-4 ">自己紹介</h2>
+        <p class=" text-gray-600 leading-relaxed">こんにちは！私はプログラミングを学んでいます。</p>
+        <p class=" text-gray-600 leading-relaxed mt-3"><span class="hover:text-red-500 underline">ホームページ作成</span>を主に引き受けています。</p>
+     </section>
+     
+     <section class= "mb-8" >
+        <h3 class="text-2xl text-gray-800 font-bold ">スキル</h3>
+        <ul  class="text-gray-600 leading-relaxed flex flex-row gap-3 justify-center mt-4">
+            <li class="text-sm bg-blue-100 text-bule-700 px-3 py-1 rounded-full transition-all duration-200 hover:scale-105">html</li> 
+            <li class="text-sm bg-blue-100 text-bule-700 px-3 py-1 rounded-full transition-all duration-200 hover:scale-105">css</li> 
+            <li class="text-sm bg-blue-100 text-bule-700 px-3 py-1 rounded-full transition-all duration-200 hover:scale-105">javascript</li> 
+        </ul>
+     </section>
+     <!-- 作品スライダー　-->
+        <section>
+            <h4 class="text-2xl text-gray-600 font-bold">作品</h4>
+            <section class="splide" aria-label="作品スライダー">
+                <p class="text-gray-600 text-sm leading-relaxed mt-3">これまで受注してきた案件です</p>
+                <div class="splide__track mt-4 group group-hover:opacity-100 transition-opacity duration-300 hover:scale-105 transition-transform">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./Gemini_Generated_Image_9qub1e9qub1e9qub (1).jpeg" alt="説明文" alt="作品１"
+                                    class="w-full rounded-lg object-cover">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./Gemini_Generated_Image_9qub1e9qub1e9qub (2).jpeg" alt="作品2" 
+                                    class="w-full rounded-lg object-cover">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./Gemini_Generated_Image_9qub1e9qub1e9qub (3).jpeg" alt="作品3"
+                                    class="w-full rounded-lg object-cover">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./Gemini_Generated_Image_9qub1e9qub1e9qub.jpeg" alt="作品4"
+                                    class="w-full rounded-lg object-cover">
+                        </li>
+                    </ul>
+                </div> 
+            </section>
+        </section>
+</main>
+
+<script>
+  new Splide('.splide', {
+    type: 'loop',
+    autoplay: true,
+    interval: 3000,
+  }).mount();
+</script>
+</body>
+
